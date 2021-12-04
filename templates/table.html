@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h3>
+            Users List
+        </h3>
+        <table style="width:100%" border="1px" >
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Adddress</th>
+            </tr>
+            {% for user in users %}
+            <tr>
+                <th>{{user.id}}</th>
+                <th>{{user.name}}</th>
+                <th>{{user.email}}</th>
+                <th>{{user.address}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
